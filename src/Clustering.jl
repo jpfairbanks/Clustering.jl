@@ -42,8 +42,10 @@ module Clustering
     silhouettes,
 
     # varinfo
-    varinfo
+    varinfo,
 
+    spectralpartition,
+    spectralsplit!
 
     ## source files
 
@@ -54,6 +56,7 @@ module Clustering
     include("kmedoids.jl")
     include("affprop.jl")
     include("dbscan.jl")
+    include("spectral.jl")
 
     include("silhouette.jl")
     include("varinfo.jl")
